@@ -1,0 +1,19 @@
+ion-toolbar{
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-light)
+}
+
+ion-back-button{
+    --color: var(--ion-color-light)
+}
+
+ion-back-button{
+    --color: var(--ion-color-light)
+}
+
+ion-icon{
+ 
+    color: #fff
+
+}
+
