@@ -8,14 +8,17 @@
     
         <ion-list>
             <ion-item 
-            v-for="memory in memories" 
+            v-for="(memory, index) in memories" 
             :router-link="`/memories/${memory.id}`"
-            :key="memory.id">
+            :key="memory.id"
+            :index="index"
+            
+             >
             <ion-thumbnail>
             <ion-img :src="memory.image" :alt="memory.title"></ion-img>
             </ion-thumbnail>
              <ion-label>{{memory.title}}</ion-label>
-           
+           <ion-label>{{index}}</ion-label>
             </ion-item>
            
         </ion-list>
@@ -36,11 +39,18 @@ export default {
     IonList,
     IonItem,
     IonImg, 
-    IonThumbnail, IonLabel, IonButton, IonIcon
+    IonThumbnail, IonLabel, IonButton, IonIcon, 
   },
+   props: ['index'],
   data(){
-      return { add };
+      return { add, };
   },
+  // methods:{
+  //   setIdinArray(index){
+      
+
+  //   }
+  // },
   
   computed:{
       memories(){

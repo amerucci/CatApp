@@ -20,7 +20,9 @@
         <ion-label position="floating"> Description </ion-label>
         <ion-textarea rows="5" required  v-model="enteredDescription"></ion-textarea>
       </ion-item>
-    
+       <ion-item>
+      <ion-datetime display-format="MM DD YY" placeholder="Select Date"></ion-datetime>
+      </ion-item>
            <ion-button type="submit" expand="full">Ajouter un membre</ion-button>
       
     </ion-list>
@@ -29,7 +31,7 @@
 </template>
 
 <script>
-import { IonList, IonItem, IonLabel, IonInput, IonTextarea, IonButton } from "@ionic/vue";
+import { IonList, IonItem, IonLabel, IonInput, IonTextarea, IonButton , IonDatetime} from "@ionic/vue";
 export default {
 
   components: {
@@ -38,7 +40,8 @@ export default {
     IonLabel,
     IonInput,
     IonTextarea,
-    IonButton
+    IonButton,
+    IonDatetime
   },
   data(){
     return {

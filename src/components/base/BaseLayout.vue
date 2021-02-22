@@ -29,7 +29,7 @@ import {
   IonButtons
 } from "@ionic/vue";
 export default {
-    props : ['pageTitle', 'pageDefaultBackLink'],
+    props : ['pageTitle', 'pageDefaultBackLink', 'index'],
   components: {
     IonPage,
     IonHeader,

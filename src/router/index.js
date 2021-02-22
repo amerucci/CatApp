@@ -19,10 +19,7 @@ const routes = [
     component: () => import('../pages/AddMemoryPage.vue')
   },
 
-  {
-    path: '/memories/delete',
-    component: () => import('../pages/AddMemoryPage.vue')
-  }
+
 
 
 

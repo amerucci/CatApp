@@ -17,3 +17,7 @@ ion-icon{
 
 }
 
+ion-icon.action-sheet-icon.sc-ion-action-sheet-ios.ios.hydrated {
+    color: var(--ion-color-primary);
+}
+
