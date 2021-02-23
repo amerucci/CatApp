@@ -14,7 +14,7 @@
   <h2 v-if="!loadedMemory">Désolé impossible de charger cet élément</h2>
   <h2 v-else class="ion-text-center">{{ loadedMemory.title }}</h2>
   <ion-img :src="loadedMemory.image" :alt="loadedMemory.title"></ion-img>
-  <p class="ion-text-justify p-4" >{{ loadedMemory.description }}</p>
+  <p class="ion-text-justify p-4" >{{ loadedMemory.description }}</p> 
  
 
 
@@ -94,11 +94,8 @@ export default {
               text: 'Modifier',
               role: '',
              
-              handler: () => {
-                  this.members.splice(this.getIndexOf(), 1)
-             localStorage.setItem('members', JSON.stringify(this.members));
-             this.$store.commit('increment');   
-             this.$router.replace('/memories')
+              handler: () => { 
+             this.$router.replace('/memories/edit/'+this.memoryId)
              console.log(this.memoryId)
               },
             },
